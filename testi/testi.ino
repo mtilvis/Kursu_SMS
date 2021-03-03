@@ -161,9 +161,9 @@ void IOControl()
     // Lämpöpumppuhälytys
     if(digitalRead(LP_ALARM))
     {
-        LPAlarm = LOW;
-    }   else {
         LPAlarm = HIGH;
+    }   else {
+        LPAlarm = LOW;
     }
     if (LPAlarm != prev_LPAlarm)
     {
